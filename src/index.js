@@ -1,5 +1,4 @@
-import express from 'express';
-import app from 'app';
+import app from './app.js';
 //instanciamos la variable app que hace uso de express
 
 const main = () => {

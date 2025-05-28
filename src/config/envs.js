@@ -1,15 +1,17 @@
-import Joi from "joi";
+import joi from "joi";
 import dotenv from "dotenv";
 
 dotenv.config();
 
-const envSchema = joi.object({
+const envSchema = joi
+.object({
     PORT: joi.number().requiered(),
     DB_HOST: joi.string().required(),
     DB_USER: joi.string().required(),
     DB_PASSWORD: joi.string().required(),
     DATABASE: joi.string().required(),
-}).unknown(true);
+})
+.unknown(true);
 
 const {value: enVars, error} = envSchema.validate(process.env);
 
