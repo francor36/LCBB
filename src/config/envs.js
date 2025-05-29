@@ -5,11 +5,11 @@ dotenv.config();
 
 const envSchema = joi
 .object({
-    PORT: joi.number().required(),
+    PORT: joi.string().required(),
     DB_HOST: joi.string().required(),
     DB_USER: joi.string().required(),
     /*DB_PASSWORD: joi.string().required(),*/
-    DATABASE: joi.string().required(),
+    DB_NAME: joi.string().required(),
 })
 .unknown(true);
 
@@ -21,6 +21,5 @@ export const envs = {
     PORT: enVars.PORT,
     DB_HOST: enVars.DB_HOST,
     DB_USER: enVars.DB_USER,
-   /* DB_PASSWORD: enVars.DB_PASSWORD, */
-    DATABASE: enVars.DATABASE
+    DB_NAME: enVars.DATABASE
 };
