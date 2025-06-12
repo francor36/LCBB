@@ -16,5 +16,6 @@ app.get('/product', productController.getProduct)
 app.get('/mov', movController.getMov)
 app.get('/categoria', cateController.getCate)
 app.post('/createcate',cateController.createCate)
+app.post('/createproducto',productController.createProduct)
 
 export default app;

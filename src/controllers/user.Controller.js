@@ -47,9 +47,6 @@ const createUser = async (req = request, res = response) => {
     }
 };
 
-const updateUser = async (req = request, res = response) => {
-
-}
 
 
 
