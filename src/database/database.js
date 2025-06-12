@@ -10,6 +10,5 @@ const connection = await mysql.createConnection({
 });
 
 export const getConnection = async () => {
-  console.log('connected to database');
   return connection;
 };

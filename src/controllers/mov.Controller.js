@@ -16,4 +16,5 @@ try{
 }
 };
 
+
 export const movController = {getMov};
